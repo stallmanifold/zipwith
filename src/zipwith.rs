@@ -18,7 +18,7 @@ impl<F,A,B,C> ZipWith<F,A,B,C>
           C: IntoIterator,
           F: Fn(A::Item, B::Item) -> C::Item
 {
-    fn zip_with(f: F, this: A, that: B) -> ZipWith<F,A::IntoIter,B::IntoIter,C::IntoIter> {
+    pub fn zip_with(f: F, this: A, that: B) -> ZipWith<F,A::IntoIter,B::IntoIter,C::IntoIter> {
         ZipWith { 
             a: this.into_iter(), 
             b: that.into_iter(), 
