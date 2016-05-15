@@ -6,6 +6,7 @@ pub use zipwith6::ZipWith6;
 pub use zipwith7::ZipWith7;
 pub use zipwith8::ZipWith8;
 
+
 mod zipwith;
 mod zipwith3;
 mod zipwith4;
